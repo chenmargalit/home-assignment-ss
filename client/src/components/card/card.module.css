@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+.cardBox {
+  box-shadow: 5px 16px 14px 8px #0000001c;
+  width: 75%;
+  background-color: #ffffff;
+}

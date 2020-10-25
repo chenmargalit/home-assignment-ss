@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: #e2e4e2;
+  padding-bottom: 1em;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  width: 100%;
+}
+
+.inputEmail,
+.inputMessage {
+  align-self: center;
+  padding: 1em;
+}
+
+.inputEmail::placeholder,
+.inputMessage::placeholder {
+  color: #d0d1d0;
+  padding: 0.5em;
+}
+
+.inputEmail {
+  height: 2.5em;
+}
+
+.inputMessage {
+  margin-top: 1em;
+  height: 7em;
+  width: 85%;
+}
+
+.buttonContainer {
+  display: flex;
+  width: 93%;
+  justify-content: flex-end;
+}

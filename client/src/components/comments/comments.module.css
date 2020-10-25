@@ -1,0 +1,59 @@
+.container {
+  padding: 2em 0;
+}
+
+input {
+  margin-top: 1em;
+  height: 2em;
+  width: 85%;
+}
+
+.namesContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+}
+
+.namesListContainer {
+  display: flex;
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+.test {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.filterInput {
+  width: 80%;
+  align-self: center;
+  text-align: left;
+  padding-left: 6%;
+}
+
+.filterInput::placeholder {
+  text-align: left;
+}
+
+.icon {
+  position: absolute;
+  top: 1.4em;
+  left: 8%;
+}
+
+.gravatarImage {
+  width: 4em;
+  height: 4em;
+  border-radius: 10px;
+}
+
+.emailText,
+.messageText {
+  margin: 0.3em;
+}
+
+.messageText {
+  color: gray;
+}
