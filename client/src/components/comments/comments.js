@@ -14,8 +14,12 @@ const Comments = () => {
 
   React.useEffect(() => {
     async function fetchComments() {
-      const res = await axios.get(`${BASE_URL}/comments/fetch`);
-      setComments(res.data);
+      try {
+        const res = await axios.get(`${BASE_URL}/comments/fetch`);
+        setComments(res.data);
+      } catch (e) {
+        console.log('error while trying to fetch comments', e.response.data);
+      }
     }
     fetchComments();
   }, []);

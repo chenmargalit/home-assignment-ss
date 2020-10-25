@@ -17,6 +17,8 @@ const apiRouter = (server) => {
   }
 
   router.post('/create', async (req, res, next) => {
+    const controller = commentsController(server);
+
     try {
       const { values } = req.body;
       const comments = await controller.createComment(values);
