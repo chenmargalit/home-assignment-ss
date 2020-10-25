@@ -1,5 +1,6 @@
 const commentsController = require('../../controllers/comments/commentsController');
 const router = require('express').Router();
+const ApiError = require('../../../infrastructure/middlewares/apiError');
 
 const apiRouter = (server) => {
   try {
@@ -7,7 +8,7 @@ const apiRouter = (server) => {
     router.get('/fetch', async (req, res, next) => {
       const comments = await controller.getComments();
       if (!comments || comments.length === 0) {
-        return next('no comments found');
+        return next(ApiError.internal('no comments found'));
       }
       res.send(comments);
     });
